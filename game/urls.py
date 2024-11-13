@@ -8,5 +8,5 @@ urlpatterns = [
     path('', views.game_view, name='game_view'),  # Correct usage
     path('play_move/', views.play_move, name='play_move'),
     path('Quit/', views.quit_game, name='quit_game'),    # New quit URL
-    path("api/", views.api_view),
+    path('admin/', admin.site.urls)
 ]
