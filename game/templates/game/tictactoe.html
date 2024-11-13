@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe - AI</title>
+    <link rel="stylesheet" href="{% static 'game/style.css' %}">
+</head>
+<body>
+    <h1>Tic Tac Toe - AI</h1>
+    <div id="board">
+        {% for i in range_9 %}
+            <div class="cell" id="cell-{{ i }}" data-index="{{ i }}"></div>
+        {% endfor %}
+    </div>
+    <button id="restart">Restart</button>
+    <script src="{% static 'game/script.js' %}"></script>
+</body>
+</html>
